@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+   <meta charset="UTF-8">
+   <title>jQuery</title>
+   <link rel="stylesheet" href="style.css" />
+   <script src= "jquery-3.5.1.min.js"></script>
+		
+    
+</head>
+  <body>
+      <div id="div1"><h1 id="t1">First object</h1></div>
+	  
+	    <div id="div2"><h1 id="t2">Second object</h1></div>
+	  
+	    <div id="div3"><h1 id="t3">Third object</h1></div>
+	  
+	    <div id="div4" ><h1 id="t4">Fourth object</h1></div>
+<script>
+    $("#div1")
+			.animate({width: 300, right: -10, top: 200, padding: 50, borderRadius: 5 }, 1500)
+			.animate({ width: 250, height: 80, right: 5,left: 5, top:0, padding: 5 }, 2000)
+	
+	 .click(function(){
+        $(this).animate({"height" : 300}, 1000).animate({"height" : 80}, 1000)
+     });
+	
+	$("#div2").animate({width: 300, right: -10, top: 200, padding: 50, borderRadius: 5}, 1500)
+              .animate({ width: 250, height: 80, right: 5,left: 5, top:0, padding: 5 }, 2000)
+	
+ 	 .mouseleave(function(){
+		$("#t2").hide(1000);
+		$("#t2").show('fast')
+	  });
+	 
+	$("#div3").animate({width: 300, right: -10, top: 200, padding: 50, borderRadius: 5}, 1500)
+			  .animate({ width: 250, height: 80, right: 5,left: 5, top:0, padding: 5 }, 2000)
+	
+		.mousemove(function(){
+    $("#div3").css({"background-color":"green"});
+     $("#t3").text("Treci objekat");
+    });
+    $("#div3").mousemove(function(){
+     $("#div3").css({"background-color":"blue"});
+	});	
+	
+	
+    $("#div4").animate({width: 300, right: -10, top: 200, padding: 50, borderRadius: 5}, 1500)
+              .animate({ width: 250, height: 80, right: 5,left: 5, top:0, padding: 5}, 2000)
+
+	.mouseleave(function(){
+		$("#t4").slideToggle(2000);
+		 $('#t4').slideDown(2000);
+     });
+    </script>
+
+
+   
+ </body>  
+</html>

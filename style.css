@@ -1,0 +1,39 @@
+#div1{
+    position: relative;;
+    background: url("images/one.png") no-repeat center;
+    width: 300px ;
+    height: 100px;
+    text-align: center;
+    float: left;
+    color:#DCE1E3;
+}
+#div2{
+    position: relative;;
+    background: url("images/to.png") no-repeat center;
+    width: 300px ;
+    height: 100px;
+    text-align: center;
+    float: left;
+    color:#DCE1E3;
+}
+#div3{
+    position: relative;;
+    background-color: aqua;
+    width: 300px ;
+    height: 100px;
+    text-align: center;
+    float: left;
+    color:#DCE1E3;
+}
+#div4{
+    position: relative;;
+    background: url("images/four.png") no-repeat center;
+    width: 300px ;
+    height: 100px;
+    text-align: center;
+    float: left;
+    color:#DCE1E3;
+}
+#t1, #t2, #t3, #t4{
+    color:white;
+
